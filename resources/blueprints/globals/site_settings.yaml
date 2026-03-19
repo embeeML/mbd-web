@@ -1,0 +1,32 @@
+title: site_settings
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: General
+        fields:
+          -
+            handle: logo_light
+            field:
+              container: assets
+              folder: img/logo
+              mode: grid
+              max_files: 1
+              min_files: 1
+              type: assets
+              display: 'Logo (Light)'
+          -
+            handle: logo_dark
+            field:
+              container: assets
+              folder: img/logo
+              max_files: 1
+              min_files: 1
+              type: assets
+              display: 'Logo (Dark)'
+  new_tab:
+    display: 'New Tab'
+    sections:
+      -
+        display: 'New Section'

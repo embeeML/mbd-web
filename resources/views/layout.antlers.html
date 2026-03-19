@@ -1,15 +1,184 @@
 <!doctype html>
-<html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
-        {{ vite src="resources/js/site.js|resources/css/site.css" }}
-    </head>
-    <body class="bg-zinc-100 dark:bg-zinc-900 font-sans leading-normal text-zinc-800 dark:text-zinc-400">
-        <div class="mx-auto px-2 lg:min-h-screen flex flex-col items-center justify-center">
-            {{ template_content }}
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#0b0d10">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>{{ title ?? "Matthew Boyles Media" }}</title>
+    <meta
+        name="description"
+        content="{{ description ?? 'Expert web design and development services based in Hollidaysburg, PA. High-performance websites focused on results. Design, Development, Hosting.' }}"
+    />
+    <link rel="canonical" href="{{ canonical_url ?? config:app:url }}" />
+
+    <meta name="robots" content="index, follow" />
+    <meta
+        name="author"
+        content="Matthew Boyles Media - Web Design &amp; Development | Hollidaysburg, PA"
+    />
+
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="{{ og_title ?? title ?? 'Matthew Boyles Media - Web Design &amp; Development | Hollidaysburg, PA' }}"
+    />
+    <meta
+        property="og:description"
+        content="{{ og_description ?? description ?? 'Discover expert web design and development services in Hollidaysburg, PA. Dynamic web design, development, and hosting.' }}"
+    />
+    <meta
+        property="og:image"
+        content="{{ og_image ?? '/assets/img/meta/ogimagelinkedin.jpg' }}"
+    />
+    <meta property="og:url" content="{{ canonical_url ?? config:app:url }}" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+        name="twitter:title"
+        content="{{ twitter_title ?? title ?? 'Matthew Boyles Media - Web Design &amp; Development | Hollidaysburg, PA' }}"
+    />
+    <meta
+        name="twitter:description"
+        content="{{ twitter_description ?? description ?? 'Discover expert web design and development services in Hollidaysburg, PA. Dynamic web design, development, and hosting.' }}"
+    />
+    <meta
+        name="twitter:image"
+        content="{{ twitter_image ?? '/assets/img/meta/ogimagelinkedin.jpg' }}"
+    />
+
+    <!-- Icons -->
+    <link
+        rel="shortcut icon"
+        href="/assets/img/meta/mbml.ico.svg"
+        type="image/x-icon"
+    />
+    <link rel="icon" href="/assets/img/meta/mbml.ico.svg" type="image/svg+xml" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&amp;display=swap"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/vendor/normalize/normalize.min.css" />
+    <link rel="stylesheet" href="/assets/vendor/swiper/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/helper.min.css" />
+    <link rel="stylesheet" href="/assets/css/mbm.styles.min.css" />
+    <link rel="stylesheet" href="/assets/css/editions.min.css" />
+    <link
+        rel="stylesheet"
+        href="/assets/vendor/fontawesome/css/fontawesome-all.min.css"
+    />
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T8T459DW");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Matthew Boyles Media",
+        "url": "https://www.embeemedialab.com/",
+        "areaServed": ["Hollidaysburg, PA", "Altoona, PA", "Blair County, PA"],
+        "serviceType": ["Web Design", "Website Redesign", "Web Development"]
+      }
+    </script>
+</head>
+
+<body class="{{ body_class ?? 'boxed magic-cursor smooth-scroll transition' }}" id="body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-T8T459DW"
+            height="0"
+            width="0"
+            style="display: none; visibility: hidden"
+        ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main id="body-inner">
+        <div id="page-transition">
+            <div class="ptr-overlay"></div>
+            <div class="ptr-preloader">
+                <div class="ptr-prel-content">
+                    <img
+                        src="/assets/img/logo/navnamelite2.png"
+                        class="logo-light ptr-prel-image"
+                        alt="Matthew Boyles Media Web Design logo"
+                    />
+                </div>
+            </div>
         </div>
-    </body>
+
+        <div id="magic-cursor">
+            <div id="ball"></div>
+        </div>
+
+        <div id="scroll-container">
+            {{ partial:header }}
+
+            <div id="content-wrap">
+                {{ template_content }}
+                {{ partial:footer }}
+            </div>
+        </div>
+    </main>
+
+    <!-- JS -->
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/gsap/gsap.min.js"></script>
+    <script src="/assets/vendor/gsap/ScrollToPlugin.min.js"></script>
+    <script src="/assets/vendor/gsap/ScrollTrigger.min.js"></script>
+    <script src="/assets/vendor/smooth-scrollbar.js"></script>
+    <script src="/assets/vendor/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/isotope/packery-mode.pkgd.min.js"></script>
+    <script src="/assets/vendor/lightgallery/js/lightgallery-all.min.js"></script>
+    <script src="/assets/vendor/jquery.mousewheel.min.js"></script>
+    <script src="/assets/vendor/swiper/js/swiper-bundle.min.js"></script> 
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/cards.js"></script>
+
+    <script>
+      (function () {
+        const el = document.getElementById("copyright-range");
+        if (!el) return;
+
+        const start = parseInt(el.dataset.start, 10);
+        const current = new Date().getFullYear();
+
+        if (!Number.isInteger(start) || start >= current) {
+          el.textContent = current;
+        } else {
+          el.textContent = `${start}–${current}`;
+        }
+      })();
+    </script>
+</body>
 </html>

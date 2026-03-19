@@ -1,4 +1,8 @@
-name: JAXone2240@mbd
+name: Matthew Boyles
 super: true
 id: a421cf94-381a-4afe-8648-b572968f4004
 password_hash: $2y$12$i1ABI2s8NnOg/vrKU0jDCuh6OBM7F.H/rw9p25O2IXZHJIRbNLMMy
+preferences:
+  collections:
+    pages:
+      view: tree

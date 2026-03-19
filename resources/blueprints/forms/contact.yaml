@@ -1,0 +1,44 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              placeholder: 'What do they call you?'
+              type: text
+              display: Name
+              validate:
+                - sometimes
+                - required
+          -
+            handle: telephone
+            field:
+              input_type: tel
+              placeholder: 'Best phone number'
+              type: text
+              display: Telephone
+              validate:
+                - required
+                - sometimes
+          -
+            handle: email
+            field:
+              input_type: email
+              placeholder: 'Your Email Address'
+              type: text
+              display: Email
+              validate:
+                - required
+                - sometimes
+                - email
+          -
+            handle: details
+            field:
+              placeholder: "What's on your mind?"
+              type: textarea
+              display: Details
+              validate:
+                - required

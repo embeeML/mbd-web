@@ -1,0 +1,100 @@
+<div id="page-header" class="ph-cap-xxlg ph-center ph-content-parallax">
+    <div class="page-header-inner wrap">
+        <div class="ph-image">
+            <div class="ph-image-inner">
+                <img src="/assets/img/contact/contact.page.hero.png" alt="Contact page hero image">
+            </div>
+        </div>
+        <div class="ph-caption">
+            <h1 class="ph-caption-title ph-appear">Want to talk?</h1>
+            <div class="ph-caption-title-ghost ph-appear">Get in touch</div>
+        </div>
+    </div>
+</div>
+
+<div id="page-content">
+    <div class="section">
+        <div class="section-inner wrap max-width-1400">
+            <div class="row padding-top-50 padding-left-20 padding-right-20">
+                <div class="col-lg-5 padding-right-lg-5-p">
+                    <div class="heading heading-lg margin-bottom-10-p anim-fadeinup">
+                        <h3 class="heading-subtitle text-red">Want to talk about a project?</h3>
+                        <h3 class="heading-subtitle text-red">Have an idea for a collaboration?</h3>
+                        <h3 class="heading-subtitle text-red">Just want to connect?</h3>
+                        <h2 class="heading-title">Drop Me<br> A Line</h2>
+                    </div>
+
+                    <ul class="contact-info padding-bottom-40 text-gray">
+                        <li class="anim-fadeinup">
+                            <span class="ci-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            Hollidaysburg, PA
+                        </li>
+                        <li class="anim-fadeinup">
+                            <span class="ci-icon"><i class="fas fa-phone"></i></span>
+                            <a href="tel:+18143179569" class="link">814-317-9569</a>
+                        </li>
+                        <li class="anim-fadeinup">
+                            <h6 class="no-margin-bottom margin-top-40">Social Media:</h6>
+                            <div class="social-buttons">
+                                <ul>
+                                    <li><a href="https://www.linkedin.com/company/matthewboylesmedia/" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="https://instagram.com/matthew.b.media?igshid=YmMyMTA2M2Y=" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCx4hHIHJ5Bi9yuay4hebMHQ" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://github.com/embeeML" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://twitter.com/MatthewRadio" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-7 anim-fadeinup padding-left-25 padding-right-25">
+    {{ form:contact }}
+        {{ if success }}
+            <div class="alert alert-success margin-bottom-30">
+                Thanks — your message has been sent.
+            </div>
+        {{ /if }}
+
+        {{ if errors }}
+            <div class="alert alert-danger margin-bottom-30">
+                <ul class="no-margin-bottom">
+                    {{ errors }}
+                        <li>{{ value }}</li>
+                    {{ /errors }}
+                </ul>
+            </div>
+        {{ /if }}
+
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input class="form-control" id="name" name="name" type="text" value="{{ old:name }}" placeholder="What do they call you?">
+        </div>
+
+        <div class="form-group">
+            <label for="telephone">Phone Number</label>
+            <input class="form-control" id="telephone" name="telephone" type="tel" value="{{ old:telephone }}" placeholder="Best phone number">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email Address</label>
+            <input class="form-control" id="email" name="email" type="email" value="{{ old:email }}" placeholder="Good email address">
+        </div>
+
+        <div class="form-group">
+            <label for="details">Message</label>
+            <textarea class="form-control" id="details" name="details" rows="6" placeholder="What's the story">{{ old:details }}</textarea>
+        </div>
+
+        <input type="text" name="website" class="honeypot-field" tabindex="-1" autocomplete="off">
+
+        <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+            <div data-hover="Send It">Submit</div>
+        </button>
+    {{ /form:contact }}
+</div>
+            </div>
+        </div>
+    </div>
+</div>

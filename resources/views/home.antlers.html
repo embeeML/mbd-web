@@ -1,21 +1,412 @@
-<a href="https://statamic.com" class="-mt-[100px] mb-5">
-    <svg id="statamic-logo" class="w-full max-w-[200px] mx-auto dark:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 614.9 112.01">
-        <path
-            d="M112.46 110.67c9.62-.6 13.78-5.17 14.72-15.49.73-8.04 1-12.06 1.36-20.11.43-9.6 5.28-15.13 9.96-17.7 1.41-.8 1.4-2.65 0-3.54-4.88-2.94-9.61-9.19-9.98-17.45-.36-7.9-.63-11.85-1.35-19.75-1.02-11.13-4.55-14.67-14.18-15.28a799 799 0 0 0-86.42.02c-9.62.61-13.16 4.15-14.18 15.28-.72 7.9-.99 11.85-1.35 19.75-.38 8.26-5.1 14.51-9.98 17.45a2.01 2.01 0 0 0 0 3.54c4.69 2.49 9.53 8.01 9.96 17.7.36 8.04.63 12.06 1.36 20.11.94 10.32 5.1 14.89 14.72 15.49 28.52 1.53 56.85 1.53 85.36 0ZM69.55 92.82c-8.77.49-19.7-3.8-25.95-9.95-1.23-1.13-1.73-2.53-1.76-3.92-.03-1.11.23-2.31 1.04-3.23.87-1.14 1.31-1.71 2.18-2.85 1.1-1.38 2.3-2.02 3.7-2.01 1.58.01 3.08.67 4.68 1.71 5.06 3.3 10.63 5.2 17.31 5.2 5.1 0 9.78-2.89 9.23-6.57-2.18-14.6-38.37-6.19-37.83-30.63C42.44 27.71 55.29 18.69 67.9 19c9.77.25 17.47 3.09 23.08 6.71 1.4.95 2.37 2.83 2.41 4.69.03 1.12-.23 2.13-.86 3.06-.65 1-.97 1.49-1.63 2.49-1.18 1.66-2.57 2.49-4.34 2.48-1.21 0-2.52-.48-3.92-1.14-4.2-2.17-8.56-3.31-13.85-3.31-5.47 0-9.15 3.52-8.76 6.1 2.18 14.47 37.35 5.97 37.84 30.07.3 14.88-15.58 22.52-28.34 22.68Z"
-        />
-        <path 
-            fill="#d4ff4c" d="M105.69 102.58c8.47-.62 12.23-4.7 13.2-13.82.75-7.1 1.03-10.65 1.4-17.76.44-8.48 4.75-13.37 8.92-15.64 1.25-.7 1.25-2.33 0-3.12-4.34-2.59-8.55-8.12-8.94-15.41-.37-6.98-.65-10.46-1.39-17.44-1.05-9.83-4.24-13-12.71-13.62a612 612 0 0 0-76.11 0c-8.47.62-11.67 3.79-12.71 13.62-.74 6.98-1.02 10.46-1.39 17.44-.39 7.29-4.59 12.82-8.94 15.41-1.25.71-1.25 2.41 0 3.12 4.17 2.19 8.48 7.08 8.92 15.64.37 7.1.65 10.65 1.4 17.76.96 9.12 4.72 13.2 13.2 13.82 25.18 1.54 50 1.54 75.18 0Z"
-        />
-        <path 
-            d="M47.49 69.34c.93-1.21 2-1.74 3.21-1.74 1.34 0 2.67.54 4.01 1.48 4.27 2.82 9.08 4.43 14.83 4.43 4.41 0 7.88-1.88 7.88-5.63 0-9.79-32.46-4.43-32.46-26.43 0-11.81 9.62-18.38 22.04-18.38 8.82 0 15.23 2.55 20.04 5.63 1.2.8 2 2.41 2 4.02 0 .94-.27 1.88-.8 2.68l-1.47 2.15c-1.07 1.48-2.27 2.15-3.74 2.15-1.07 0-2.14-.4-3.34-.94-3.61-1.88-7.35-2.82-11.89-2.82s-7.48 2.55-7.48 5.23c0 10.06 32.46 4.56 32.46 25.89 0 11.94-9.62 19.32-24.31 19.32-9.35 0-16.16-2.82-22.44-8.32-1.07-.94-1.47-2.15-1.47-3.35 0-.94.27-2.01.94-2.82l2-2.55Zm126.21 4.5c.88-1.15 1.85-1.59 3-1.59s2.56.53 3.71 1.41c3.97 2.65 8.47 4.15 13.86 4.15 4.15 0 7.42-1.68 7.42-5.3 0-9.09-30.28-4.15-30.28-24.45 0-10.95 9-17.13 20.57-17.13 8.21 0 14.21 2.3 18.71 5.3 1.15.71 1.85 2.21 1.85 3.71 0 .88-.18 1.68-.71 2.56l-1.41 2.03c-.97 1.41-2.12 2.03-3.44 2.03-.97 0-2.03-.44-3.18-.88-3.35-1.68-6.89-2.65-11.03-2.65s-6.97 2.3-6.97 4.86c0 9.27 30.28 4.24 30.28 24.01 0 11.03-9 17.92-22.69 17.92-8.74 0-15.1-2.65-20.92-7.68a4.23 4.23 0 0 1-1.41-3.18c0-.88.18-1.85.88-2.65l1.77-2.47Zm86.69 5.82c.44.62.62 1.41.62 2.12 0 1.59-.71 3.27-2.12 3.97-4.24 2.56-8.47 3.71-14.04 3.71-12.62 0-17.39-8.21-17.39-22.6V21.31c0-2.56 2.12-4.68 4.68-4.68h5.03c2.56 0 4.68 2.12 4.68 4.68v10.95h13.51c2.56 0 4.68 2.12 4.68 4.68v4.24c0 2.56-2.12 4.68-4.68 4.68h-13.51v20.48c0 6.09 2.03 10.15 6.71 10.15 1.5 0 2.82-.18 3.97-.62s2.03-.62 2.82-.62c1.59 0 2.82.71 3.88 2.56l1.15 1.85Zm8.74-7.77c0-12.36 9.09-18.18 20.48-18.18 4.94 0 9.89 1.59 12.62 3.62v-1.68c0-8.21-2.65-12.62-10.42-12.62-4.24 0-6.97.62-9.62 1.5-.71.18-1.5.44-2.21.44-1.85 0-3.35-.88-4.24-2.65l-.71-1.5c-.18-.62-.53-1.24-.53-2.03 0-1.59 1.15-3.27 2.65-3.97 4.86-2.21 10.42-3.71 16.15-3.71 16.6 0 22.33 8.47 22.33 23.3v29.48c0 2.56-2.12 4.68-4.68 4.68h-3.27c-2.56 0-4.68-2.12-4.68-4.68v-1.85c-3 4.24-9 7.15-16.6 7.15-9.98-.09-17.3-6.44-17.3-17.3Zm33.1-5.82c-2.56-1.85-5.74-2.74-9.8-2.74-4.77 0-9 2.21-9 6.97 0 4.24 3.44 6.62 8.03 6.62 6 0 9.09-2.65 10.86-5.03v-5.83h-.09Zm59.85 13.59c.44.62.62 1.41.62 2.12 0 1.59-.71 3.27-2.12 3.97-4.24 2.56-8.47 3.71-14.04 3.71-12.62 0-17.39-8.21-17.39-22.6V21.31c0-2.56 2.12-4.68 4.68-4.68h5.03c2.56 0 4.68 2.12 4.68 4.68v10.95h13.51c2.56 0 4.68 2.12 4.68 4.68v4.24c0 2.56-2.12 4.68-4.68 4.68h-13.51v20.48c0 6.09 2.03 10.15 6.71 10.15 1.5 0 2.82-.18 3.97-.62s2.03-.62 2.82-.62c1.59 0 2.82.71 3.88 2.56l1.15 1.85Zm8.74-7.77c0-12.36 9.09-18.18 20.48-18.18 4.94 0 9.89 1.59 12.62 3.62v-1.68c0-8.21-2.65-12.62-10.42-12.62-4.24 0-6.97.62-9.62 1.5-.71.18-1.5.44-2.21.44-1.85 0-3.35-.88-4.24-2.65l-.71-1.5c-.18-.62-.53-1.24-.53-2.03 0-1.59 1.15-3.27 2.65-3.97 4.86-2.21 10.42-3.71 16.15-3.71 16.6 0 22.33 8.47 22.33 23.3v29.48c0 2.56-2.12 4.68-4.68 4.68h-3.27c-2.56 0-4.68-2.12-4.68-4.68v-1.85c-3 4.24-9 7.15-16.6 7.15-9.89-.09-17.3-6.44-17.3-17.3Zm33.1-5.82c-2.56-1.85-5.74-2.74-9.8-2.74-4.77 0-9 2.21-9 6.97 0 4.24 3.44 6.62 8.03 6.62 6 0 9.09-2.65 10.86-5.03v-5.83h-.09Zm42.55-27.63c3.97-4.41 10.59-7.15 17.48-7.15 8.56 0 14.3 3.88 16.33 9 3.97-5.3 10.24-9 18.89-9 10.24 0 17.92 5.03 17.92 20.48v31.96c0 2.56-2.12 4.68-4.68 4.68h-5.03c-2.56 0-4.68-2.12-4.68-4.68V55.39c0-6.97-2.82-10.77-9.62-10.77-5.38 0-9.62 2.65-11.56 6.44 0 .88.09 2.82.09 4.15v28.34c0 2.56-2.12 4.68-4.68 4.68h-5.03c-2.56 0-4.68-2.12-4.68-4.68V54.42c0-5.91-3.27-9.71-9.27-9.71-5.03 0-9.18 2.21-11.74 6v33.02c0 2.56-2.12 4.68-4.68 4.68h-5.03c-2.56 0-4.68-2.12-4.68-4.68V36.86c0-2.56 2.12-4.68 4.68-4.68h5.03c2.56 0 4.68 2.12 4.68 4.68v1.59h.26Zm103.02-26.4c0 5.74-4.15 9-8.21 9-4.86 0-9-3.27-9-9 0-5.03 4.15-8.3 9-8.3 4.06 0 8.21 3.27 8.21 8.3m-6 20.22c2.56 0 4.68 2.12 4.68 4.68v46.79c0 2.56-2.12 4.68-4.68 4.68h-5.03c-2.56 0-4.68-2.12-4.68-4.68V36.86c0-2.56 2.12-4.68 4.68-4.68h5.03v.09Zm60.02 14.3c-3.35-1.59-6.27-2.21-9.89-2.21-8.03 0-15.62 6.09-15.62 15.89s7.68 16.07 16.15 16.07c4.41 0 7.59-1.15 10.86-3.27.97-.62 2.03-.97 3-.97 1.5 0 2.82.62 3.88 1.85l2.12 2.65c.62.62.88 1.59.88 2.56 0 1.5-.62 3.18-1.68 3.97-6.71 5.38-12.62 6.62-19.6 6.62-18.54 0-30.81-11.74-30.81-29.4 0-16.33 11.92-29.4 29.04-29.4 7.5 0 12.98 1.24 18.45 4.24 1.41.71 2.21 2.56 2.21 4.15 0 .71-.09 1.41-.53 2.03l-1.85 3.27c-.97 1.59-2.56 2.65-4.24 2.65-.71-.18-1.59-.26-2.38-.71Z"
-        />
-    </svg>
-    <svg class="w-full max-w-[200px] mx-auto hidden dark:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 614.9 111.63">
-        <path 
-            fill="#FF269E" d="M112.46 110.48c9.62-.6 13.78-5.17 14.72-15.49.73-8.04 1-12.06 1.36-20.11.43-9.6 5.28-15.13 9.96-17.7 1.41-.8 1.4-2.65 0-3.54-4.88-2.94-9.61-9.19-9.98-17.45-.36-7.9-.63-11.85-1.35-19.75-1.02-11.13-4.55-14.67-14.18-15.28a793 793 0 0 0-86.42 0c-9.62.61-13.16 4.15-14.18 15.28-.72 7.9-.99 11.85-1.35 19.75-.38 8.26-5.1 14.51-9.98 17.45a2.01 2.01 0 0 0 0 3.54c4.69 2.49 9.53 8.01 9.96 17.7.36 8.04.63 12.06 1.36 20.11.94 10.32 5.1 14.89 14.72 15.49 28.52 1.53 56.85 1.53 85.36 0M69.55 92.63c-8.77.49-19.7-3.8-25.95-9.95-1.23-1.13-1.73-2.53-1.76-3.92-.03-1.11.23-2.31 1.04-3.23.87-1.14 1.31-1.71 2.18-2.85 1.1-1.38 2.3-2.02 3.7-2.01 1.58.01 3.08.67 4.68 1.71 5.06 3.3 10.63 5.2 17.31 5.2 5.1 0 9.78-2.89 9.23-6.57-2.18-14.6-38.37-6.19-37.83-30.63.29-12.86 13.14-21.88 25.75-21.57 9.77.25 17.47 3.09 23.08 6.71 1.4.95 2.37 2.83 2.41 4.69.03 1.12-.23 2.13-.86 3.06-.65 1-.97 1.49-1.63 2.49-1.18 1.66-2.57 2.49-4.34 2.48-1.21 0-2.52-.48-3.92-1.14-4.2-2.17-8.56-3.31-13.85-3.31-5.47 0-9.15 3.52-8.76 6.1 2.18 14.47 37.35 5.97 37.84 30.07.3 14.88-15.58 22.52-28.34 22.68ZM173.7 72.09c.88-1.15 1.85-1.59 3-1.59s2.56.53 3.71 1.41c3.97 2.65 8.47 4.15 13.86 4.15 4.15 0 7.42-1.68 7.42-5.3 0-9.09-30.28-4.15-30.28-24.45 0-10.95 9-17.13 20.57-17.13 8.21 0 14.21 2.3 18.71 5.3 1.15.71 1.85 2.21 1.85 3.71 0 .88-.18 1.68-.71 2.56l-1.41 2.03c-.97 1.41-2.12 2.03-3.44 2.03-.97 0-2.03-.44-3.18-.88-3.35-1.68-6.89-2.65-11.03-2.65s-6.97 2.3-6.97 4.86c0 9.27 30.28 4.24 30.28 24.01 0 11.03-9 17.92-22.69 17.92-8.74 0-15.1-2.65-20.92-7.68a4.23 4.23 0 0 1-1.41-3.18c0-.88.18-1.85.88-2.65l1.77-2.47Zm86.68 5.83c.44.62.62 1.41.62 2.12 0 1.59-.71 3.27-2.12 3.97-4.24 2.56-8.47 3.71-14.04 3.71-12.62 0-17.39-8.21-17.39-22.6V19.57c0-2.56 2.12-4.68 4.68-4.68h5.03c2.56 0 4.68 2.12 4.68 4.68v10.95h13.51c2.56 0 4.68 2.12 4.68 4.68v4.24c0 2.56-2.12 4.68-4.68 4.68h-13.51V64.6c0 6.09 2.03 10.15 6.71 10.15 1.5 0 2.82-.18 3.97-.62s2.03-.62 2.82-.62c1.59 0 2.82.71 3.88 2.56l1.15 1.85Zm8.74-7.77c0-12.36 9.09-18.18 20.48-18.18 4.94 0 9.89 1.59 12.62 3.62v-1.68c0-8.21-2.65-12.62-10.42-12.62-4.24 0-6.97.62-9.62 1.5-.71.18-1.5.44-2.21.44-1.85 0-3.35-.88-4.24-2.65l-.71-1.5c-.18-.62-.53-1.24-.53-2.03 0-1.59 1.15-3.27 2.65-3.97 4.86-2.21 10.42-3.71 16.15-3.71 16.6 0 22.33 8.47 22.33 23.3v29.48c0 2.56-2.12 4.68-4.68 4.68h-3.27c-2.56 0-4.68-2.12-4.68-4.68V80.3c-3 4.24-9 7.15-16.6 7.15-9.98-.09-17.3-6.44-17.3-17.3Zm33.11-5.83c-2.56-1.85-5.74-2.74-9.8-2.74-4.77 0-9 2.21-9 6.97 0 4.24 3.44 6.62 8.03 6.62 6 0 9.09-2.65 10.86-5.03v-5.83h-.09Zm59.85 13.6c.44.62.62 1.41.62 2.12 0 1.59-.71 3.27-2.12 3.97-4.24 2.56-8.47 3.71-14.04 3.71-12.62 0-17.39-8.21-17.39-22.6V19.57c0-2.56 2.12-4.68 4.68-4.68h5.03c2.56 0 4.68 2.12 4.68 4.68v10.95h13.51c2.56 0 4.68 2.12 4.68 4.68v4.24c0 2.56-2.12 4.68-4.68 4.68h-13.51V64.6c0 6.09 2.03 10.15 6.71 10.15 1.5 0 2.82-.18 3.97-.62s2.03-.62 2.82-.62c1.59 0 2.82.71 3.88 2.56l1.15 1.85Zm8.74-7.77c0-12.36 9.09-18.18 20.48-18.18 4.94 0 9.89 1.59 12.62 3.62v-1.68c0-8.21-2.65-12.62-10.42-12.62-4.24 0-6.97.62-9.62 1.5-.71.18-1.5.44-2.21.44-1.85 0-3.35-.88-4.24-2.65l-.71-1.5c-.18-.62-.53-1.24-.53-2.03 0-1.59 1.15-3.27 2.65-3.97 4.86-2.21 10.42-3.71 16.15-3.71 16.6 0 22.33 8.47 22.33 23.3v29.48c0 2.56-2.12 4.68-4.68 4.68h-3.27c-2.56 0-4.68-2.12-4.68-4.68V80.3c-3 4.24-9 7.15-16.6 7.15-9.89-.09-17.3-6.44-17.3-17.3Zm33.1-5.83c-2.56-1.85-5.74-2.74-9.8-2.74-4.77 0-9 2.21-9 6.97 0 4.24 3.44 6.62 8.03 6.62 6 0 9.09-2.65 10.86-5.03v-5.83h-.09Zm42.55-27.63c3.97-4.41 10.59-7.15 17.48-7.15 8.56 0 14.3 3.88 16.33 9 3.97-5.3 10.24-9 18.89-9 10.24 0 17.92 5.03 17.92 20.48v31.96c0 2.56-2.12 4.68-4.68 4.68h-5.03c-2.56 0-4.68-2.12-4.68-4.68V53.64c0-6.97-2.82-10.77-9.62-10.77-5.38 0-9.62 2.65-11.56 6.44 0 .88.09 2.82.09 4.15V81.8c0 2.56-2.12 4.68-4.68 4.68h-5.03c-2.56 0-4.68-2.12-4.68-4.68V52.67c0-5.91-3.27-9.71-9.27-9.71-5.03 0-9.18 2.21-11.74 6v33.02c0 2.56-2.12 4.68-4.68 4.68h-5.03c-2.56 0-4.68-2.12-4.68-4.68V35.11c0-2.56 2.12-4.68 4.68-4.68h5.03c2.56 0 4.68 2.12 4.68 4.68v1.59h.26ZM549.49 10.3c0 5.74-4.15 9-8.21 9-4.86 0-9-3.27-9-9 0-5.03 4.15-8.3 9-8.3 4.06 0 8.21 3.27 8.21 8.3m-6.01 20.21c2.56 0 4.68 2.12 4.68 4.68v46.79c0 2.56-2.12 4.68-4.68 4.68h-5.03c-2.56 0-4.68-2.12-4.68-4.68V35.11c0-2.56 2.12-4.68 4.68-4.68h5.03v.09Zm60.03 14.3c-3.35-1.59-6.27-2.21-9.89-2.21-8.03 0-15.62 6.09-15.62 15.89s7.68 16.07 16.15 16.07c4.41 0 7.59-1.15 10.86-3.27.97-.62 2.03-.97 3-.97 1.5 0 2.82.62 3.88 1.85l2.12 2.65c.62.62.88 1.59.88 2.56 0 1.5-.62 3.18-1.68 3.97-6.71 5.38-12.62 6.62-19.6 6.62-18.54 0-30.81-11.74-30.81-29.4 0-16.33 11.92-29.4 29.04-29.4 7.5 0 12.98 1.24 18.45 4.24 1.41.71 2.21 2.56 2.21 4.15 0 .71-.09 1.41-.53 2.03l-1.85 3.27c-.97 1.59-2.56 2.65-4.24 2.65-.71-.18-1.59-.26-2.38-.71Z"
-        />
-    </svg>
-</a>
-<article class="mt-4 bg-white dark:bg-zinc-950 p-8 shadow-xl rounded-2xl max-w-xl prose prose-zinc dark:prose-invert [&_a]:text-indigo-700 dark:[&_a]:text-indigo-400">
-    {{ content | widont }}
-</article>
+---
+layout: layout
+title: "Matthew Boyles Media - Web Design & Development | Hollidaysburg, PA"
+description: "Expert web design and development services based in Hollidaysburg, PA. High-performance websites focused on results. Design, Development, Hosting."
+canonical_url: "https://www.embeemedialab.com/"
+body_class: "boxed magic-cursor smooth-scroll transition home--2026"
+---
+<div class="ph-cap-sm ph-content-parallax ph-full" id="page-header">
+    <div class="wrap page-header-inner">
+        <div class="ph-image">
+            <div class="ph-image-inner">
+                <img
+                    src="/assets/img/logo/ico.shove.svg"
+                    alt="Matthew Boyles Media Web Design logo"
+                    fetchpriority="high"
+                    decoding="async"
+                />
+            </div>
+        </div>
+
+        <div class="max-width-1100 ph-caption">
+            <h1 class="ph-appear font-normal ph-caption-title">
+                Premium web<em><span class="ph-caption-colored"> design</span></em>.<br />
+                Strategic<em><u> development</u></em>
+            </h1>
+
+            <p class="ph-appear ph-caption-subtitle hm-hero-subtitle">
+                Hardworking websites built with purpose.
+            </p>
+
+            <div class="ph-appear hm-hero-ctas">
+                <a href="/contact" class="btn btn-primary">
+                    <div data-hover="Get Started">Request a Project</div>
+                </a>
+
+                <a href="/portfolio" class="btn btn-link">
+                    <div data-hover="Explore projects">View Selected Work</div>
+                </a>
+            </div>
+
+            <div class="ph-appear ph-caption-title-ghost">Hello!</div>
+        </div>
+    </div>
+
+    <a href="#page-content" class="scroll-down-circle" data-offset="30">
+        <div class="ph-appear sdc-inner">
+            <div class="sdc-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+
+            <svg viewBox="0 0 500 500" aria-hidden="true" focusable="false">
+                <defs>
+                    <path
+                        d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"
+                        id="textcircle"
+                    ></path>
+                </defs>
+                <text dy="30">
+                    <textPath xlink:href="#textcircle">
+                        Take a look and get in touch-
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+    </a>
+
+    <div class="ph-appear edition-tag">
+        <div class="edt-inner">
+            <div class="edt-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="edt-text padding-right-5">2026 Edition</div>
+        </div>
+    </div>
+</div>
+
+<div id="page-content">
+    <div class="section">
+        <div class="section-inner wrap max-width-900">
+            <div class="padding-left-20 padding-right-20 row padding-top-50">
+                <div class="col-12">
+                    <h2 class="anim-fadeinup">
+                        I’m Matthew Boyles—freelance web designer and front-end
+                        developer based in Hollidaysburg, Pennsylvania.
+                    </h2>
+
+                    <p class="anim-fadeinup text-xxlg hm-intro-lead">
+                        For 10+ years, I’ve helped businesses clarify their message,
+                        improve user experience, and turn websites into dependable
+                        tools for growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-inner max-width-1100 wrap padding-bottom-50">
+        <div class="anim-fadeinup row justify-content-center padding-bottom-100">
+            <div class="flow main">
+                <div class="cards main__cards">
+                    <div class="cards__inner">
+                        <div class="anim-skewinup card cards__card hm-proof-item">
+                            <div class="card__heading">
+                                10+ years of hands-on delivery, care, & support
+                            </div>
+                        </div>
+
+                        <div class="anim-skewinup card cards__card">
+                            <div class="card__heading">
+                                Design decisions grounded in usability and function
+                            </div>
+                        </div>
+
+                        <div class="anim-skewinup card cards__card">
+                            <div class="card__heading">
+                                Websites built to support real business goals
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cards__inner overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section hm-port-section mbm-portv2" aria-labelledby="mbm-portv2-title">
+    <div class="section-inner max-width-1100">
+        <div class="anim-fadeinup heading heading-lg margin-bottom-10-p padding-left-20 padding-right-20">
+            <h3 class="heading-subtitle text-gray">Think Visually</h3>
+            <h2 class="heading-title" id="mbm-portv2-title">Select Recent Projects</h2>
+
+            <p class="text-xxxlg">
+                My focus is narrow on purpose. I do not attempt to be a jack of all trades online and digital marketer.
+                I keep focused on one primary function and a few support roles that help my clients see a return on the
+                investments they make.
+            </p>
+
+            <p class="text-xxlg">
+                Here are a few recent projects — you can see more on my portfolio page.
+            </p>
+        </div>
+
+        <div class="mbm-portv2-stack padding-left-20 padding-right-20 anim-fadeinup">
+            <div
+                class="mbm-portv2-list mbm-portv2-list--2col"
+                role="list"
+                aria-label="Recent projects preview list"
+            >
+                <button
+                    type="button"
+                    class="mbm-portv2-item is-active"
+                    role="listitem"
+                    data-preview="/assets/img/hm/port/dawson-and-wolfe-construction-web-preview.png"
+                    data-preview-alt="Preview image for Dawson and Wolfe Construction website"
+                >
+                    <div class="mbm-portv2-main">
+                        <h3 class="mbm-portv2-title">Dawson &amp; Wolfe Construction</h3>
+                        <div class="mbm-portv2-desc">Website Redesign</div>
+                    </div>
+                    <div class="mbm-portv2-meta">
+                        <span class="mbm-portv2-tag">Web Design / Development</span>
+                    </div>
+                </button>
+
+                <button
+                    type="button"
+                    class="mbm-portv2-item"
+                    role="listitem"
+                    data-preview="/assets/img/hm/port/spencer-davis-foundation-web-preview.png"
+                    data-preview-alt="Preview image for The Spencer Davis Foundation website"
+                >
+                    <div class="mbm-portv2-main">
+                        <h3 class="mbm-portv2-title">The Spencer Davis Foundation</h3>
+                        <div class="mbm-portv2-desc">Website Design</div>
+                    </div>
+                    <div class="mbm-portv2-meta">
+                        <span class="mbm-portv2-tag">Web Design / Development</span>
+                    </div>
+                </button>
+
+                <button
+                    type="button"
+                    class="mbm-portv2-item"
+                    role="listitem"
+                    data-preview="/assets/img/hm/port/mattson-logo-16x9.png"
+                    data-preview-alt="Preview image for Mattson Electric Logo showcase"
+                >
+                    <div class="mbm-portv2-main">
+                        <h3 class="mbm-portv2-title">Mattson Electric</h3>
+                        <div class="mbm-portv2-desc">Logo Design</div>
+                    </div>
+                    <div class="mbm-portv2-meta">
+                        <span class="mbm-portv2-tag">Branding</span>
+                    </div>
+                </button>
+
+                <button
+                    type="button"
+                    class="mbm-portv2-item"
+                    role="listitem"
+                    data-preview="/assets/img/hm/port/werstil-companies-web-preview.png"
+                    data-preview-alt="Preview image for Werstil Companies website"
+                >
+                    <div class="mbm-portv2-main">
+                        <h3 class="mbm-portv2-title">Werstil Companies</h3>
+                        <div class="mbm-portv2-desc">Website Design</div>
+                    </div>
+                    <div class="mbm-portv2-meta">
+                        <span class="mbm-portv2-tag">Web Design / Development</span>
+                    </div>
+                </button>
+            </div>
+
+            <aside class="mbm-portv2-preview-row" aria-hidden="true">
+                <div class="mbm-portv2-preview mbm-portv2-preview--row">
+                    <div class="mbm-portv2-preview-inner">
+                        <figure class="mbm-portv2-media">
+                            <img
+                                id="mbmPortPreviewImg"
+                                src="/assets/img/hm/port/dawson-and-wolfe-construction-web-preview.png"
+                                alt=""
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </figure>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="anim-fadeinup row padding-top-50 text-center">
+            <div class="justify-content-center col-12 align-text-center">
+                <a href="/portfolio" class="btn btn-primary align-text-center">
+                    <div data-hover="The Work">View My Portfolio</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section services-outcomes" aria-labelledby="services-outcomes-title">
+    <div class="section-inner max-width-1100 wrap">
+        <header class="services-outcomes__header">
+            <p class="services-outcomes__kicker">What I Help Businesses Do</p>
+            <h2 id="services-outcomes-title" class="services-outcomes__title">
+                Websites built to solve real problems
+            </h2>
+        </header>
+
+        <ul class="services-outcomes__list">
+            <li class="services-outcomes__item">
+                <div class="services-outcomes__content">
+                    <span class="services-outcomes__headline">Clarify their message</span>
+                    <span class="services-outcomes__meta">Design &amp; UX strategy</span>
+                </div>
+
+                <div class="services-outcomes__chips" aria-hidden="true">
+                    <span class="services-outcomes__chip">Web Design</span>
+                    <span class="services-outcomes__chip">Content structure</span>
+                    <span class="services-outcomes__chip">UX</span>
+                </div>
+            </li>
+
+            <li class="services-outcomes__item">
+                <div class="services-outcomes__content">
+                    <span class="services-outcomes__headline">Convert visitors into leads</span>
+                    <span class="services-outcomes__meta">Structure, flow, performance</span>
+                </div>
+
+                <div class="services-outcomes__chips" aria-hidden="true">
+                    <span class="services-outcomes__chip">Landing Pages</span>
+                    <span class="services-outcomes__chip">Forms</span>
+                    <span class="services-outcomes__chip">Analytics</span>
+                </div>
+            </li>
+
+            <li class="services-outcomes__item">
+                <div class="services-outcomes__content">
+                    <span class="services-outcomes__headline">Ship fast, reliable websites</span>
+                    <span class="services-outcomes__meta">Clean development &amp; testing</span>
+                </div>
+
+                <div class="services-outcomes__chips" aria-hidden="true">
+                    <span class="services-outcomes__chip">Web Development</span>
+                    <span class="services-outcomes__chip">Performance</span>
+                    <span class="services-outcomes__chip">Accessibility</span>
+                </div>
+            </li>
+
+            <li class="services-outcomes__item">
+                <div class="services-outcomes__content">
+                    <span class="services-outcomes__headline">Maintain performance long-term</span>
+                    <span class="services-outcomes__meta">Hosting, updates, support</span>
+                </div>
+
+                <div class="services-outcomes__chips" aria-hidden="true">
+                    <span class="services-outcomes__chip">Hosting</span>
+                    <span class="services-outcomes__chip">Backups</span>
+                    <span class="services-outcomes__chip">Maintenance</span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="services-outcomes__cta">
+            <a href="/services" class="btn btn-primary align-text-center">
+                <span data-hover="How I Help">View Services</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="section">
+    <div class="section-inner max-width-1100">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <a class="mbm-card" href="/about">
+                    <div class="mbm-card__top">
+                        <span class="mbm-card__num">01</span>
+                        <span class="mbm-card__arrow" aria-hidden="true">
+                            <i class="far fa-user"></i>
+                        </span>
+                    </div>
+
+                    <h3 class="mbm-card__title">Who I Am &amp; How I Work</h3>
+                    <p class="mbm-card__desc">
+                        A bit about my background, approach, and what I value in client work.
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <a class="mbm-card" href="/portfolio">
+                    <div class="mbm-card__top">
+                        <span class="mbm-card__num">02</span>
+                        <span class="mbm-card__arrow" aria-hidden="true">
+                            <i class="far fa-images"></i>
+                        </span>
+                    </div>
+
+                    <h3 class="mbm-card__title">Selected Work</h3>
+                    <p class="mbm-card__desc">
+                        A focused look at recent projects and how they perform.
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="row margin-top-15">
+            <div class="col-12 col-lg-4">
+                <a class="mbm-card" href="/contact">
+                    <div class="mbm-card__top">
+                        <span class="mbm-card__num">03</span>
+                        <span class="mbm-card__arrow" aria-hidden="true">
+                            <i class="far fa-comment-dots"></i>
+                        </span>
+                    </div>
+
+                    <h3 class="mbm-card__title">Start A Conversation</h3>
+                    <p class="mbm-card__desc">
+                        Tell me about your project or ask a few questions.
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-12 col-lg-8">
+                <a class="mbm-card" href="https://blog.embeemedialab.com">
+                    <div class="mbm-card__top">
+                        <span class="mbm-card__num">04</span>
+                        <span class="mbm-card__arrow" aria-hidden="true">
+                            <i class="far fa-bookmark"></i>
+                        </span>
+                    </div>
+
+                    <h3 class="mbm-card__title">Notes and Insights</h3>
+                    <p class="mbm-card__desc">
+                        Thoughts on design, development, and running long-term projects.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section padding-bottom-xlg-150 padding-top-xlg-150">
+    <div class="section-inner">
+        <div
+            class="font-italic scr-text-stroke scrolling-text"
+            data-scroll-speed="15"
+        >
+            <div
+                class="scrolling-text-inner text-dark-3"
+                data-text="Expect More From Your Website -"
+            >
+                Expect More From Your Website -
+            </div>
+        </div>
+
+        <div
+            class="font-italic scr-text-stroke scrolling-text highlight-text scr-text-reverse"
+            data-scroll-speed="15"
+        >
+            <div
+                class="highlight-text scrolling-text-inner text-dark-3"
+                data-text="Expect More From Your Designer -"
+            >
+                Expect More From Your Designer -
+            </div>
+        </div>
+    </div>
+</div>
