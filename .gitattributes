@@ -6,6 +6,30 @@
 *.md diff=markdown
 *.php diff=php
 
+# Normalize line endings
+* text=auto
+
+# Force LF for dev files
+*.js text eol=lf
+*.css text eol=lf
+*.php text eol=lf
+*.html text eol=lf
+*.antlers.html text eol=lf
+
+# Binary files (no line ending conversion)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.svg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+
+# Ignore vendor normalization (optional)
+public/assets/vendor/** -text
+
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
