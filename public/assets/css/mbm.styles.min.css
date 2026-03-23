@@ -4497,7 +4497,7 @@ video.pn-video {
         height: 100%;
         width: clamp(520px, 58vw, 760px);
         opacity: .65;
-        transition: opacity .35s ease; transform .35s ease;
+        transition: opacity .35s ease, transform .35s ease;
     }
     .content-carousel .swiper-slide-active{
         opacity: 1;
@@ -7244,4 +7244,11 @@ body:not(.boxed) .footer-inner, .footer-inner:not(.wrap) {
         padding-top: 50px;
         list-style: none
     }
+}
+.post-intro {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #b9b9b9;
+    line-height: 1.6
 }

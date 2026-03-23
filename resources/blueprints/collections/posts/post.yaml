@@ -1,0 +1,94 @@
+title: Post
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: intro
+            field:
+              type: textarea
+              display: Intro
+              validate:
+                - required
+          -
+            handle: featured_image
+            field:
+              container: assets
+              folder: img/posts
+              restrict: true
+              max_files: 1
+              type: assets
+              display: 'Featured Image'
+          -
+            handle: content
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h4
+                - h5
+                - h6
+                - underline
+                - small
+                - code
+                - codeblock
+                - horizontalrule
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              reading_time: true
+              word_count: true
+              link_noopener: true
+              target_blank: true
+              container: assets
+              remove_empty_nodes: false
+              type: bard
+              display: Content
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date_field
+            field:
+              type: date
+              display: 'Date Field'
+              validate:
+                - required
+          -
+            handle: excerpt
+            field:
+              type: textarea
+              display: Excerpt
+          -
+            handle: tags
+            field:
+              type: taggable
+              display: Tags

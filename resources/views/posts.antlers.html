@@ -1,0 +1,47 @@
+<div id="page-header" class="ph-cap-sm ph-center">
+    <div class="page-header-inner wrap">
+        <div class="ph-caption">
+            {{ if date }}
+                <div class="ph-caption-subtitle ph-appear">{{ date format="F j, Y" }}</div>
+            {{ /if }}
+            <h1 class="ph-caption-title ph-appear">{{ title }}</h1>
+            {{ if intro }}
+                <div class="ph-caption-subtitle ph-appear">{{ intro }}</div>
+            {{ /if }}
+        </div>
+    </div>
+</div>
+
+<div id="page-content">
+    <div class="wrap">
+
+        {{ if featured_image }}
+            <div class="row section-padding-top">
+                <div class="col-12 anim-fadeinup">
+                    <img src="{{ glide:featured_image width='1600' }}" alt="{{ title }}">
+                </div>
+            </div>
+        {{ /if }}
+
+        <div class="row section-padding-top">
+            <div class="col-lg-8 anim-fadeinup">
+                <article class="tt-entry">
+                    {{ content }}
+                </article>
+            </div>
+        </div>
+
+        {{ if tags }}
+            <div class="row section-padding-top">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-wrap gap-10">
+                        {{ tags }}
+                            <span>{{ title }}</span>
+                        {{ /tags }}
+                    </div>
+                </div>
+            </div>
+        {{ /if }}
+
+    </div>
+</div>

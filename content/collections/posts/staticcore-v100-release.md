@@ -1,0 +1,184 @@
+---
+id: c0cae627-9068-495d-ad45-53c7d95728d5
+blueprint: post
+title: 'staticCore v1.0.0 release'
+author: a421cf94-381a-4afe-8648-b572968f4004
+template: posts/show
+updated_by: a421cf94-381a-4afe-8648-b572968f4004
+updated_at: 1773970784
+intro: "Beta testing and bug fixing was completed and after a few tweaks I have a production ready theme release on the projects Github.I'm excited to announce the official v1.0.0 release of the staticCore WordPress Theme — now available on GitHub."
+date_field: '2025-06-01 04:00'
+excerpt: "Beta testing and bug fixing was completed and after a few tweaks I have a production ready theme release on the projects Github.I'm excited to announce the official v1.0.0 release of the staticCore WordPress Theme — now available on GitHub."
+tags:
+  - Wordpress
+  - PHP
+  - CMS
+  - Frameworks
+content:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: "This theme was originally built as a lightweight foundation for converting static HTML/CSS/JS websites into WordPress, and it's now production-ready."
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Static Core is perfect for developers who want to:- Maintain full control over their markup'
+  -
+    type: bulletList
+    content:
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: null
+            content:
+              -
+                type: text
+                text: 'Maintain full control over their markup'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: null
+            content:
+              -
+                type: text
+                text: 'Integrate WordPress only where needed'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: null
+            content:
+              -
+                type: text
+                text: 'Preserve static site performance with minimal WordPress overhead'
+  -
+    type: heading
+    attrs:
+      textAlign: null
+      level: 4
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "🔧 What's Included"
+  -
+    type: bulletList
+    content:
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: null
+            content:
+              -
+                type: text
+                text: 'Clean HTML5 template structure'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: null
+            content:
+              -
+                type: text
+                text: 'Modular '
+              -
+                type: text
+                marks:
+                  -
+                    type: code
+                text: functions.php
+              -
+                type: text
+                text: ' with essential WordPress features'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: null
+            content:
+              -
+                type: text
+                text: 'CSS/JS asset organization (including vendor support)'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: null
+            content:
+              -
+                type: text
+                text: 'Custom logo support, widget-ready sidebar, and basic SEO meta'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: null
+            content:
+              -
+                type: text
+                text: 'Lightweight markup with no visual styling assumptions'
+  -
+    type: paragraph
+    attrs:
+      textAlign: null
+    content:
+      -
+        type: text
+        text: "Whether you're transitioning an existing static site into WordPress or starting a minimal theme from scratch, Static Core offers a solid starting point that stays out of your way."
+  -
+    type: paragraph
+    attrs:
+      textAlign: null
+    content:
+      -
+        type: text
+        text: '👉 Check out the '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://github.com/embeeML/static.core.wp/releases/tag/v1.0.0'
+              rel: noopener
+              target: _blank
+              title: null
+          -
+            type: underline
+        text: 'release on GitHub'
+      -
+        type: text
+        text: ' and feel free to fork, clone, or contribute!'
+---

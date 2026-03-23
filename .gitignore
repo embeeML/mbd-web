@@ -1,26 +1,76 @@
-*.log
+# -----------------------------------
+# System / OS
+# -----------------------------------
 .DS_Store
+Thumbs.db
+
+# -----------------------------------
+# Environment / Secrets
+# -----------------------------------
 .env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
+.env.*
+!.env.example
+
+# -----------------------------------
+# Laravel / Statamic
+# -----------------------------------
+/vendor
 /node_modules
 /public/build
 /public/hot
 /public/static
 /public/storage
 /public/vendor/statamic
+
 /storage/*.key
 /storage/pail
-/vendor
+
+# -----------------------------------
+# IDE / Editor
+# -----------------------------------
+.vscode
+.idea
+.fleet
+.zed
+
+# -----------------------------------
+# Logs / Cache
+# -----------------------------------
+*.log
+.phpunit.result.cache
+.phpunit.cache
+.phpactor.json
+
+# -----------------------------------
+# Local dev / VM
+# -----------------------------------
 Homestead.json
 Homestead.yaml
-Thumbs.db
+
+# -----------------------------------
+# Asset Control
+# -----------------------------------
+
+# Ignore raw / large design assets
+public/assets/raw/
+public/assets/source/
+public/assets/originals/
+
+
+# public/assets/img/background/
+
+# Allow optimized assets only
+!public/assets/img/
+!public/assets/css/
+!public/assets/js/
+
+# -----------------------------------
+# Optional: prevent accidental large files
+# -----------------------------------
+*.psd
+*.ai
+*.sketch
+*.fig
+*.zip
+*.tar
+*.gz

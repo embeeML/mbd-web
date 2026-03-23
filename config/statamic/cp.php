@@ -53,8 +53,19 @@ return [
     */
 
     'widgets' => [
-        //
+    [
+        'type' => 'collection',
+        'collection' => 'posts',
+        'width' => 50,
     ],
+
+    [
+        'type' => 'form',
+        'form' => 'contact',
+        'fields' => ['name', 'email'],
+        'width' => 50,
+    ],
+],
 
     /*
     |--------------------------------------------------------------------------

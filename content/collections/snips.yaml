@@ -1,0 +1,2 @@
+route: '/journal/snippets/{slug}'
+sort_dir: desc

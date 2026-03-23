@@ -1,0 +1,13 @@
+title: Posts
+route: '/journal/posts/{slug}'
+template: posts/show
+layout: layout
+revisions: false
+date: true
+sort_dir: desc
+mount: journal-posts
+taxonomies: 
+  - tags
+date_behavior:
+  past: public
+  future: private

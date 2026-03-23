@@ -1,0 +1,57 @@
+<div id="page-header" class="ph-cap-sm ph-center">
+    <div class="page-header-inner wrap">
+        <div class="ph-caption">
+            {{ if publication:show_post_author }}
+                Written by <b class="text-white">{{ author:name }}</b><br>
+                <span class="">on {{ date }}</span>
+            {{ else }}
+                <span class="">{{ date_field }}</span>
+            {{ /if }}
+            <h1 class="ph-caption-title ph-appear">{{ title }}</h1>
+        </div>
+    </div>
+</div>
+
+<div id="page-content">
+    <div class="section">
+        <div class="section-inner wrap max-width-1400">
+            <div class="row padding-left-20 padding-right-20">
+                <article class="col-12">
+                    {{ if date_field }}
+                            <div class="text-sm padding-bottom-20">
+                                {{ date_field format="F j, Y" }}
+                            </div>
+                        {{ /if }}
+                    {{ if featured_image }}
+                        <div class="row section-padding-top">
+                            <div class="col-12 anim-fadeinup">
+                                <img src="{{ glide:featured_image width='1600' }}" alt="{{ title }}">
+                            </div>
+                        </div>
+                    {{ /if }}
+                    {{ if intro }}
+                    <p class="anim-fadeinup post-intro">
+                        {{ intro }}
+                    </p>
+                    {{ /if }}
+                    {{ content }}
+                </article>
+                <div class="section-padding-top">
+                    <a href="/journal/posts" class="btn btn-primary align-text-center">
+                        <span data-hover="Back to Posts">Back to Posts</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title }}",
+    "datePublished": "{{ date_field format='Y-m-d' }}",
+    "dateModified": "{{ updated_at format='Y-m-d' }}"
+}
+</script>

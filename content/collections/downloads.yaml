@@ -1,0 +1,2 @@
+route: '/journal/downloads/{slug}'
+sort_dir: desc

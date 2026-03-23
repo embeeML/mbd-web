@@ -1,0 +1,102 @@
+<div id="page-header" class="ph-cap-xxlg ph-center ph-content-parallax">
+    <div class="page-header-inner wrap">
+        <div class="ph-caption">
+            <h1 class="ph-caption-title ph-appear">Journal</h1>
+            <div class="ph-caption-title-ghost ph-appear">Field Notes</div>
+        </div>
+    </div>
+</div>
+
+<div id="page-content">
+    
+
+        <!-- INTRO -->
+        <div class="section">
+            <div class="section-inner wrap max-width-900">
+                <div class="padding-left-20 padding-right-20 row padding-top-50">
+                  <div class="col-12">
+                    <h2 class="anim-fadeinup">
+                      Writing, updates, front-end experiments, and working notes on ongoing design and dev projects.
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <!-- LATEST POSTS -->
+         <div class="section">
+            <div class="section-inner wrap max-width-1100">
+                <div class="padding-left-20 padding-right-20 row padding-top-50">
+                    <div class="col-12">
+                        <h2 class="anim-fadeinup">
+                            Latest Field Notes.
+                        </h2>
+                    </div>
+                    <div class="row">
+                        {{ collection:posts limit="3" sort="date:desc" }}
+                        <div class="col-md-4 anim-fadeinup">
+                            <a href="{{ url }}" class="block">
+
+                                {{ if featured_image }}
+                                    <div class="mb-20">
+                                        <img src="{{ glide:featured_image width='900' }}" alt="{{ title }}">
+                                    </div>
+                                {{ /if }}
+
+                                <h3 class="tt-heading-sm">{{ title }}</h3>
+
+                                {{ if intro }}
+                                    <p>{{ intro }}</p>
+                                {{ elseif excerpt }}
+                                    <p>{{ excerpt }}</p>
+                                {{ /if }}
+                            </a>
+                        </div>
+                        {{ /collection:posts }}
+                    </div>
+                    <div class="mt-40">
+                        <a href="/journal/posts" class="btn btn-primary align-text-center">
+                            <span data-hover="View All Posts">View All Posts</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- CONTENT TYPES -->
+        <div class="section-padding-top">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="tt-heading-lg">Explore the Journal</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 anim-fadeinup">
+                    <h3 class="tt-heading-sm">Posts</h3>
+                    <p>Writing on design, development, strategy, and ongoing work.</p>
+                    <a href="/journal/posts" class="tt-btn tt-btn-link">
+                        <span data-hover="Browse Posts">Browse Posts</span>
+                    </a>
+                </div>
+
+                <div class="col-md-4 anim-fadeinup">
+                    <h3 class="tt-heading-sm">Snippets</h3>
+                    <p>Reusable front-end patterns and code experiments.</p>
+                    <a href="/journal/snippets" class="tt-btn tt-btn-link">
+                        <span data-hover="Browse Snippets">Browse Snippets</span>
+                    </a>
+                </div>
+
+                <div class="col-md-4 anim-fadeinup">
+                    <h3 class="tt-heading-sm">Downloads</h3>
+                    <p>Assets, graphics, and downloadable resources.</p>
+                    <a href="/journal/downloads" class="tt-btn tt-btn-link">
+                        <span data-hover="Browse Downloads">Browse Downloads</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+</div>
