@@ -12,7 +12,7 @@
 
         <!-- INTRO -->
         <div class="section">
-            <div class="section-inner wrap max-width-900">
+            <div class="section-inner wrap max-width-1100">
                 <div class="padding-left-20 padding-right-20 row padding-top-50">
                   <div class="col-12">
                     <h2 class="anim-fadeinup">
@@ -29,19 +29,14 @@
                 <div class="padding-left-20 padding-right-20 row padding-top-50">
                     <div class="col-12">
                         <h2 class="anim-fadeinup">
-                            Latest Field Notes.
+                            Entries, updates, and other notes.
                         </h2>
                     </div>
                     <div class="row">
-                        {{ collection:posts limit="3" sort="date:desc" }}
-                        <div class="col-md-4 anim-fadeinup">
+                        {{ collection:posts limit="3" sort="date:desc" taxonomy:tags="updates" }}
+                        <div class="anim-fadeinup">
                             <a href="{{ url }}" class="block">
 
-                                {{ if featured_image }}
-                                    <div class="mb-20">
-                                        <img src="{{ glide:featured_image width='900' }}" alt="{{ title }}">
-                                    </div>
-                                {{ /if }}
 
                                 <h3 class="tt-heading-sm">{{ title }}</h3>
 
