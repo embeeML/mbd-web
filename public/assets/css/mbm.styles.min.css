@@ -7252,3 +7252,11 @@ body:not(.boxed) .footer-inner, .footer-inner:not(.wrap) {
     color: #b9b9b9;
     line-height: 1.6
 }
+
+.journal-teaser {
+    padding: 2.5rem 0;
+}
+
+.journal-teaser--divider {
+    border-top: 1px solid rgb(255, 1, 1);
+}
