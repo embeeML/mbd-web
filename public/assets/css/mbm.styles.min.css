@@ -1270,11 +1270,7 @@ a.ph-category:hover {
     height: 250px;
     z-index: 9
 }
-@media (max-width:1024px) {
-    .scroll-down-circle {
-        display: none
-    }
-}
+
 #page-header:not(.ph-full) .scroll-down-circle {
     display: none
 }
@@ -5008,7 +5004,7 @@ button {
     color: #FFF
 }
 .btn-link::after {
-    display: inline-block;
+    display: inline-flex;
     content: "";
     width: 40px;
     height: 1px;

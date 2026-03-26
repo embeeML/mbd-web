@@ -84,8 +84,12 @@ body::after{
   display:block;
 }
 
-@media (max-width:1024px){
-  .edition-tag{ display:none; }
+@media (max-width: 1024px) {
+  #page-header.ph-full .edition-tag,
+  #page-header.ph-bg-image .edition-tag,
+  .edition-tag {
+    display: none !important;
+  }
 }
 
 .edt-inner{
@@ -1029,4 +1033,93 @@ body::after{
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 18px 60px rgba(0,0,0,0.55);
   transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.desktop-only{
+  display:none;
+}
+@media (min-width:1025px){
+  .desktop-only{
+    display:inline-flex;
+  }
+} 
+
+@media (max-width: 1024px) {
+    .scroll-down-circle {
+        display: block;
+        left: 50%;
+        bottom: 24px;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 60px;
+    }
+
+    .scroll-down-circle svg {
+        display: none;
+    }
+
+    .scroll-down-circle .sdc-icon {
+        left: 50%;
+        top: 50%;
+        font-size: 18px;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        animation: mobile-scroll-bounce 1.8s infinite;
+    }
+}
+.sdc-mobile-label {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .scroll-down-circle {
+      display: block;
+      left: 50%;
+      bottom: 14px;
+      transform: translateX(-50%);
+        width: auto;
+        height: auto;
+        padding: 10px 14px;
+        gap: 8px;
+    }
+
+    .scroll-down-circle .sdc-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        
+        
+    }
+
+    .scroll-down-circle svg {
+        display: none;
+    }
+
+    .scroll-down-circle .sdc-icon {
+        position: static;
+        left: auto;
+        top: auto;
+        transform: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .sdc-mobile-label {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 1;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.50);
+        border-radius: 999px;
+        background: rgba(0,0,0,.25);
+        backdrop-filter: blur(6px);
+        padding: 10px 14px;
+    }
 }
