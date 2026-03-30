@@ -16,7 +16,6 @@ Thumbs.db
 # -----------------------------------
 /vendor
 /node_modules
-/public/build
 /public/hot
 /public/static
 /public/storage
@@ -50,19 +49,9 @@ Homestead.yaml
 # -----------------------------------
 # Asset Control
 # -----------------------------------
-
-# Ignore raw / large design assets
 public/assets/raw/
 public/assets/source/
 public/assets/originals/
-
-
-# public/assets/img/background/
-
-# Allow optimized assets only
-!public/assets/img/
-!public/assets/css/
-!public/assets/js/
 
 # -----------------------------------
 # Optional: prevent accidental large files
